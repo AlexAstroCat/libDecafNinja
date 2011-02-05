@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B18084712ECB18000FDA433 /* DNFetchedRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B18084512ECB18000FDA433 /* DNFetchedRequestManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B18084812ECB18000FDA433 /* DNFetchedRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18084612ECB18000FDA433 /* DNFetchedRequestManager.m */; };
+		1B18084B12ECB1E000FDA433 /* libDecafNinja_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1B18084A12ECB1E000FDA433 /* libDecafNinja_Prefix.pch */; };
+		1B18086112ECB2A200FDA433 /* CoreData_DNFetchedRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18086012ECB2A200FDA433 /* CoreData_DNFetchedRequestManager.m */; };
+		1B18086D12ECB2D600FDA433 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B18086C12ECB2D600FDA433 /* CoreData.framework */; };
+		1B18093F12ECCD4200FDA433 /* DNManagedObjectXMLSync.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B18093D12ECCD4200FDA433 /* DNManagedObjectXMLSync.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B18094012ECCD4200FDA433 /* DNManagedObjectXMLSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18093E12ECCD4200FDA433 /* DNManagedObjectXMLSync.m */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B18084512ECB18000FDA433 /* DNFetchedRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNFetchedRequestManager.h; sourceTree = "<group>"; };
+		1B18084612ECB18000FDA433 /* DNFetchedRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNFetchedRequestManager.m; sourceTree = "<group>"; };
+		1B18084A12ECB1E000FDA433 /* libDecafNinja_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libDecafNinja_Prefix.pch; sourceTree = "<group>"; };
+		1B18085112ECB20F00FDA433 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B18085212ECB20F00FDA433 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		1B18085F12ECB2A200FDA433 /* CoreData_DNFetchedRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreData_DNFetchedRequestManager.h; sourceTree = "<group>"; };
+		1B18086012ECB2A200FDA433 /* CoreData_DNFetchedRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreData_DNFetchedRequestManager.m; sourceTree = "<group>"; };
+		1B18086C12ECB2D600FDA433 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1B18093D12ECCD4200FDA433 /* DNManagedObjectXMLSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNManagedObjectXMLSync.h; sourceTree = "<group>"; };
+		1B18093E12ECCD4200FDA433 /* DNManagedObjectXMLSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNManagedObjectXMLSync.m; sourceTree = "<group>"; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* liblibDecafNinja.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibDecafNinja.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B18084E12ECB20F00FDA433 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				1B18086D12ECB2D600FDA433 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* liblibDecafNinja.a */,
+				1B18085112ECB20F00FDA433 /* UnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* libDecafNinja */ = {
+			isa = PBXGroup;
+			children = (
+				1B18091E12ECCB4400FDA433 /* Headers */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				1B18084912ECB1D300FDA433 /* Other Sources */,
+				1B18085712ECB22300FDA433 /* Tests */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = libDecafNinja;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+				1B18086C12ECB2D600FDA433 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1B18084412ECB17800FDA433 /* CoreData */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1B18084412ECB17800FDA433 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1B18093E12ECCD4200FDA433 /* DNManagedObjectXMLSync.m */,
+				1B18084612ECB18000FDA433 /* DNFetchedRequestManager.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		1B18084912ECB1D300FDA433 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1B18084A12ECB1E000FDA433 /* libDecafNinja_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		1B18085712ECB22300FDA433 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1B18085212ECB20F00FDA433 /* UnitTests-Info.plist */,
+				1B18085F12ECB2A200FDA433 /* CoreData_DNFetchedRequestManager.h */,
+				1B18086012ECB2A200FDA433 /* CoreData_DNFetchedRequestManager.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		1B18091E12ECCB4400FDA433 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				1B18093D12ECCD4200FDA433 /* DNManagedObjectXMLSync.h */,
+				1B18084512ECB18000FDA433 /* DNFetchedRequestManager.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B18084712ECB18000FDA433 /* DNFetchedRequestManager.h in Headers */,
+				1B18084B12ECB1E000FDA433 /* libDecafNinja_Prefix.pch in Headers */,
+				1B18093F12ECCD4200FDA433 /* DNManagedObjectXMLSync.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1B18085012ECB20F00FDA433 /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B18085512ECB20F00FDA433 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				1B18084C12ECB20F00FDA433 /* Resources */,
+				1B18084D12ECB20F00FDA433 /* Sources */,
+				1B18084E12ECB20F00FDA433 /* Frameworks */,
+				1B18084F12ECB20F00FDA433 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = 1B18085112ECB20F00FDA433 /* UnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D2AAC07D0554694100DB518D /* libDecafNinja */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "libDecafNinja" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libDecafNinja;
+			productName = libDecafNinja;
+			productReference = D2AAC07E0554694100DB518D /* liblibDecafNinja.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "libDecafNinja" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* libDecafNinja */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* libDecafNinja */,
+				1B18085012ECB20F00FDA433 /* UnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B18084C12ECB20F00FDA433 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B18084F12ECB20F00FDA433 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B18084D12ECB20F00FDA433 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B18086112ECB2A200FDA433 /* CoreData_DNFetchedRequestManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B18084812ECB18000FDA433 /* DNFetchedRequestManager.m in Sources */,
+				1B18094012ECCD4200FDA433 /* DNManagedObjectXMLSync.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1B18085312ECB20F00FDA433 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTests;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1B18085412ECB20F00FDA433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTests;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/libDecafNinja.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = libDecafNinja_Prefix.pch;
+				PRODUCT_NAME = libDecafNinja;
+				PUBLIC_HEADERS_FOLDER_PATH = Headers;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/libDecafNinja.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = libDecafNinja_Prefix.pch;
+				PRODUCT_NAME = libDecafNinja;
+				PUBLIC_HEADERS_FOLDER_PATH = Headers;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B18085512ECB20F00FDA433 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B18085312ECB20F00FDA433 /* Debug */,
+				1B18085412ECB20F00FDA433 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "libDecafNinja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "libDecafNinja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
