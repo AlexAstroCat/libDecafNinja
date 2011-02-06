@@ -29,7 +29,7 @@
 		1B18093D12ECCD4200FDA433 /* DNManagedObjectXMLSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNManagedObjectXMLSync.h; sourceTree = "<group>"; };
 		1B18093E12ECCD4200FDA433 /* DNManagedObjectXMLSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNManagedObjectXMLSync.m; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D2AAC07E0554694100DB518D /* liblibDecafNinja.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibDecafNinja.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AAC07E0554694100DB518D /* libDecafNinja.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDecafNinja.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 		034768DFFF38A50411DB9C8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2AAC07E0554694100DB518D /* liblibDecafNinja.a */,
+				D2AAC07E0554694100DB518D /* libDecafNinja.a */,
 				1B18085112ECB20F00FDA433 /* UnitTests.octest */,
 			);
 			name = Products;
@@ -161,9 +161,9 @@
 			productReference = 1B18085112ECB20F00FDA433 /* UnitTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		D2AAC07D0554694100DB518D /* libDecafNinja */ = {
+		D2AAC07D0554694100DB518D /* DecafNinja */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "libDecafNinja" */;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "DecafNinja" */;
 			buildPhases = (
 				D2AAC07A0554694100DB518D /* Headers */,
 				D2AAC07B0554694100DB518D /* Sources */,
@@ -173,9 +173,9 @@
 			);
 			dependencies = (
 			);
-			name = libDecafNinja;
+			name = DecafNinja;
 			productName = libDecafNinja;
-			productReference = D2AAC07E0554694100DB518D /* liblibDecafNinja.a */;
+			productReference = D2AAC07E0554694100DB518D /* libDecafNinja.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -198,7 +198,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2AAC07D0554694100DB518D /* libDecafNinja */,
+				D2AAC07D0554694100DB518D /* DecafNinja */,
 				1B18085012ECB20F00FDA433 /* UnitTests */,
 			);
 		};
@@ -323,7 +323,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = libDecafNinja_Prefix.pch;
-				PRODUCT_NAME = libDecafNinja;
+				PRODUCT_NAME = DecafNinja;
 				PUBLIC_HEADERS_FOLDER_PATH = Headers;
 			};
 			name = Debug;
@@ -336,7 +336,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = libDecafNinja_Prefix.pch;
-				PRODUCT_NAME = libDecafNinja;
+				PRODUCT_NAME = DecafNinja;
 				PUBLIC_HEADERS_FOLDER_PATH = Headers;
 			};
 			name = Release;
@@ -384,7 +384,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "libDecafNinja" */ = {
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "DecafNinja" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB921F08733DC00010E9CD /* Debug */,

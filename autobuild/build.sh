@@ -1,14 +1,14 @@
 #!/bin/sh
 set -ex
-git clean -dfx
 
 rm -rf output
-mkdir -p output
+mkdir -p output/libDecafNinja
 
-xcodebuild -activetarget build
+xcodebuild -activetarget build -sdk iphoneos
+xcodebuild -activetarget build -sdk iphonesimulator
 
-cp -r $WORKSPACE/build/Release-iphoneos output/libDecafNinja
+lipo -create -output output/libDecafNinja/libDecafNinja.a build/Release-iphoneos/libDecafNinja.a build/Release-iphonesimulator/libDecafNinja.a 
+cp -r Headers output/libDecafNinja
 zip -r output/libDecafNinja.zip output/libDecafNinja
-rm -rf output/libDecafNinja
 
 $DOXYGEN_PATH doxygen.config
