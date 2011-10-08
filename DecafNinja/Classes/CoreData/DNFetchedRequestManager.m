@@ -23,53 +23,12 @@
 #pragma mark -
 #pragma mark Singleton Methods
 
-static DNFetchedRequestManager *sharedInstance = nil; 
-
-+ (void)initialize {
-    if (sharedInstance == nil)
-        sharedInstance = [[self alloc] init];
-}
-
-/**
- Returns the shared factory instance.
- */
 + (DNFetchedRequestManager*)sharedInstance {
-    //Already set by +initialize.
+    static dispatch_once_t pred;
+    static DNFetchedRequestManager *sharedInstance = nil;
+    
+    dispatch_once(&pred, ^{ sharedInstance = [[self alloc] init]; });
     return sharedInstance;
-}
-
-+ (id)allocWithZone:(NSZone*)zone {
-    if (sharedInstance) {
-        return [sharedInstance retain];
-    } else {
-        return [super allocWithZone:zone];
-    }
-}
-
-- (id)init {
-    if (sharedInstance == nil) {
-		self = [super init];
-		if (self) {
-            //Initialize the instance here.
-        }
-    }
-    return self;
-}
-
-- (id)copyWithZone:(NSZone*)zone {
-    return self;
-}
-- (id)retain {
-    return self;
-}
-- (unsigned)retainCount {
-    return UINT_MAX;
-}
-- (void)release {
-    // do nothing 
-}
-- (id)autorelease {
-    return self;
 }
 
 #pragma mark -
@@ -124,7 +83,8 @@ static DNFetchedRequestManager *sharedInstance = nil;
 			}
 			
 			else {
-				NSLog(@"Error constructing fetched request: sort descriptor \"%@\" is not an NSString or NSSortDescriptor");
+				NSLog(@"Error constructing fetched request: sort descriptor \"%@\" is not an NSString or NSSortDescriptor",
+                      sort);
 				abort();
 			}
 		}

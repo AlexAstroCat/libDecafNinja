@@ -1,5 +1,5 @@
 //
-//  CoreData_DNFetchedRequestManager.h
+//  CoreData_DNFetchedRequestManager.m
 //  libDecafNinja
 //
 //  Created by Michael Nachbaur on 11-01-23.
@@ -8,9 +8,9 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
+@interface CoreData_DNFetchedRequestManager : SenTestCase
+@end
 
-@interface CoreData_DNFetchedRequestManager : SenTestCase {
-
-}
+@implementation CoreData_DNFetchedRequestManager
 
 @end
